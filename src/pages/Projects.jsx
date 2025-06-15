@@ -11,22 +11,22 @@ export const Projects = () => {
     {
       title: 'Inventory Management System',
       description: 'A full-stack web app to manage stock, barcodes, delivery, and expiry tracking.',
-      link: '#',
-      image: '/images/inventory.jpg',
+      link: 'https://github.com/Dilmini1027/inventory-management-food-market.git',
+      image: '../WhatsApp Image 2025-06-14 at 21.18.15_c4db2e7d.jpg',
       category: 'Web App',
     },
     {
       title: 'Manipulation Art',
       description: 'Conceptual digital art using Photoshop and storytelling through visuals.',
-      link: '#',
-      image: '/images/art.png',
+      link: 'https://github.com/Dilmini1027/photoshop.git',
+      image: '../22it0531- 03. Photo Manipulation & Editing(3).png',
       category: 'Art',
     },
     {
       title: 'Calculator',
       description: 'A minimalist Python calculator with clean UI and keyboard support.',
-      link: '#',
-      image: '/images/calculator.png',
+      link: 'https://github.com/Dilmini1027/calculator.git',
+      image: '../Capture1.png',
       category: 'Tool',
     },
   ];
