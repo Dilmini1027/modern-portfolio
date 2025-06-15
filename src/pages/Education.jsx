@@ -12,14 +12,14 @@ export const Education = () => {
       degree: 'A/L - Physical Science',
       institute: 'H/ Debarawewa Central College',
       year: '2021(2022)',
-      pdf: '/al.pdf',
+      
       icon: <FaGraduationCap className="text-4xl text-green-500" />,
     },
     {
       degree: 'O/L Examination',
       institute: 'H/ Debarawewa Central College',
       year: '2018',
-      pdf: '/ol.pdf',
+      
       icon: <FaBook className="text-4xl text-blue-500" />,
     },
     {
