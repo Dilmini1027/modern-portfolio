@@ -38,7 +38,7 @@ const Hero = () => {
         <div className="flex items-center gap-4">
   {/* Download Resume Button */}
   <a
-  href="/path-to-your-resume.pdf"
+  href="./Deep Purple Professional College Student CV Resume.pdf"
   download
   className="inline-block px-6 py-2 text-red-500 transition duration-300 border border-red-500 rounded-full hover:bg-red-500 hover:text-white"
 >
