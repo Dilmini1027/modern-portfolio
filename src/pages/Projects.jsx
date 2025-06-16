@@ -29,6 +29,21 @@ export const Projects = () => {
       image: '../Capture1.png',
       category: 'Tool',
     },
+    {
+      title: 'Modern ToDo App',
+      description: 'A featured- full project to handle tasks with motivated background music.',
+      link: 'https://github.com/Dilmini1027/My-to-do-app.git',
+      image: '../WhatsApp Image 2025-06-16 at 22.01.27_fe6e223f.jpg',
+      category: 'Tool',
+    },
+     {
+      title: 'Portrait Art',
+      description: 'Coverting photos into artistic portraits. 100% handwork',
+      link: 'https://www.facebook.com/profile.php?id=61554414223518',
+      image: '../475849489_122185541186147140_2312287385030872675_n.jpg',
+      category: 'Art',
+    },
+    
   ];
 
   const filteredProjects =

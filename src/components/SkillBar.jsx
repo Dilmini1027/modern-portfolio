@@ -1,6 +1,6 @@
 export const SkillBar = ({ skill, level, icon }) => {
   return (
-    <div className="mb-2 max-w-md"> {/* limits width */}
+    <div className="max-w-md mb-2"> {/* limits width */}
       <div className="flex justify-between mb-0.5 text-sm font-medium leading-tight">
         <span className="flex items-center gap-1 truncate">
           {icon} {skill}
