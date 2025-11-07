@@ -1,19 +1,23 @@
-import Sidebar from "../components/Sidebar";
 import Hero from "../components/Hero";
 import { About } from "./About";
 import { Skills } from "./Skills";
 import { Projects } from "./Projects";
 import { Education } from "./Education";
 import { Contact } from "../components/Contact";
+import Achievements from "../components/Achievements";
+
+import Certifications from "../components/Certifications";
+
+import { FadeInOnScroll, FloatingElements } from "../components/ScrollAnimations";
 
 export const Home = () => {
   return (
-    <div className="relative flex min-h-screen text-gray-900 transition-colors bg-white dark:bg-slate-900 dark:text-white">
+    <div className="relative min-h-screen text-gray-900 transition-colors bg-white dark:bg-slate-900 dark:text-white">
       
       {/* 🌠 Animated stars background (only in dark mode) */}
-      <div className="hidden stars-effect dark:block">
+      <div className="fixed inset-0 hidden stars-effect dark:block pointer-events-none">
         {Array.from({ length: 40 }).map((_, i) => {
-          const size = Math.random() * 10 + 6; // 3px–7px
+          const size = Math.random() * 10 + 6; // 6px–16px
           const left = Math.random() * 100; // % from left
           const delay = Math.random() * 10; // seconds
           const duration = 12 + Math.random() * 20; // seconds
@@ -33,18 +37,44 @@ export const Home = () => {
         })}
       </div>
 
-      {/* Sidebar */}
-      <Sidebar />
+      {/* Floating Elements */}
+      <FloatingElements />
 
-      {/* Main content shifted to right (ml-60 = sidebar width) */}
-      <div className="relative z-10 w-full ml-60">
+      {/* Main content */}
+      <div className="relative z-10 w-full">
         <main className="px-6 pt-8 space-y-24 md:px-12">
-          <section id="hero"><Hero /></section>
-          <section id="about"><About /></section>
-          <section id="skills"><Skills /></section>
-          <section id="education"><Education /></section>
-          <section id="projects"><Projects /></section>
-          <section id="contact"><Contact /></section>
+          <FadeInOnScroll direction="up">
+            <section id="hero"><Hero /></section>
+          </FadeInOnScroll>
+          
+          <FadeInOnScroll direction="left" delay={0.2}>
+            <section id="about"><About /></section>
+          </FadeInOnScroll>
+          
+          <FadeInOnScroll direction="up" delay={0.1}>
+            <section id="achievements"><Achievements /></section>
+          </FadeInOnScroll>
+          
+          <FadeInOnScroll direction="right" delay={0.2}>
+            <section id="skills"><Skills /></section>
+          </FadeInOnScroll>
+          
+          <FadeInOnScroll direction="up" delay={0.1}>
+            <section id="education"><Education /></section>
+          </FadeInOnScroll>
+          
+          <FadeInOnScroll direction="left" delay={0.2}>
+            <section id="certifications"><Certifications /></section>
+          </FadeInOnScroll>
+          
+          <FadeInOnScroll direction="up" delay={0.1}>
+            <section id="projects"><Projects /></section>
+          </FadeInOnScroll>
+          
+          
+          <FadeInOnScroll direction="up" delay={0.2}>
+            <section id="contact"><Contact /></section>
+          </FadeInOnScroll>
         </main>
 
         {/* Footer */}

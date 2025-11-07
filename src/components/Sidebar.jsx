@@ -2,7 +2,7 @@ import { ThemeToggle } from "./ThemeToggle";
 
 const Sidebar = () => {
   return (
-    <aside className="fixed top-0 left-0 z-50 flex flex-col h-full px-6 py-8 text-white bg-black shadow-lg w-72">
+    <aside className="fixed top-0 left-0 z-50 flex-col h-full px-6 py-8 text-white bg-black shadow-lg w-72 overflow-y-auto hidden md:flex">
 
       {/* Header + Theme Toggle Row */}
       <div className="flex items-center justify-between mb-10">
@@ -13,13 +13,15 @@ const Sidebar = () => {
       </div>
 
       {/* Navigation Links */}
-      <nav className="pl-6 space-y-5 text-lg"><br/>
-        <a href="#hero" className="block hover:text-red-400">Home</a>
-        <a href="#about" className="block hover:text-red-400">About</a>
-        <a href="#skills" className="block hover:text-red-400">Skills</a>
-        <a href="#education" className="block hover:text-red-400">Education</a>
-        <a href="#projects" className="block hover:text-red-400">Projects</a>
-        <a href="#contact" className="block hover:text-red-400">Contact</a>
+      <nav className="pl-6 space-y-4 text-lg"><br/>
+        <a href="#hero" className="block hover:text-red-400 transition-colors">Home</a>
+        <a href="#about" className="block hover:text-red-400 transition-colors">About</a>
+        <a href="#achievements" className="block hover:text-red-400 transition-colors">Achievements</a>
+        <a href="#skills" className="block hover:text-red-400 transition-colors">Skills</a>
+        <a href="#education" className="block hover:text-red-400 transition-colors">Education</a>
+        <a href="#certifications" className="block hover:text-red-400 transition-colors">Certifications</a>
+        <a href="#projects" className="block hover:text-red-400 transition-colors">Projects</a>
+         <a href="#contact" className="block hover:text-red-400 transition-colors">Contact</a>
       </nav>
       
     </aside>

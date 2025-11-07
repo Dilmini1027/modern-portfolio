@@ -31,14 +31,15 @@ const Hero = () => {
           />
         </h2>
 
-        <p className="max-w-xl mx-auto mb-6 text-sm font-thin text-gray-600 md:mx-0 dark:text-gray-400">
-          Hi! I’m R.M. Dilmini Shyawindi Senevirathne, an undergrad at the Institute of Technology, University of Moratuwa. I’m passionate about web development and design, skilled in React, PHP, and MySQL. This portfolio will be a show case of my skills. </p>
+        <p className="max-w-xl mx-auto mb-6 text-lg leading-relaxed text-gray-600 md:mx-0 dark:text-gray-400">
+          Hi! I'm R.M. Dilmini Shyawindi Senevirathne, an undergraduate at the Institute of Technology, University of Moratuwa. I'm passionate about creating innovative web solutions and captivating digital art. Welcome to my portfolio showcasing my journey in technology and creativity.
+        </p>
 
         {/* Resume Button */}
         <div className="flex items-center gap-4">
   {/* Download Resume Button */}
   <a
-  href="./Deep Purple Professional College Student CV Resume.pdf"
+  href="./Dilmini Shyawindi's resume.pdf"
   download
   className="inline-block px-6 py-2 text-red-500 transition duration-300 border border-red-500 rounded-full hover:bg-red-500 hover:text-white"
 >
@@ -51,14 +52,16 @@ const Hero = () => {
     <a 
       href="https://github.com/Dilmini1027" 
       target="_blank" 
+      rel="noopener noreferrer"
       className="text-gray-600 hover:text-black"
     >
       <i className="text-2xl fab fa-github"></i>
     </a>
     
     <a 
-      href="www.linkedin.com/in/dilmini-shyawindi0926" 
+      href="http://www.linkedin.com/in/dilmini-shyawindi0926" 
       target="_blank" 
+      rel="noopener noreferrer"
       className="text-blue-600 hover:text-blue-800"
     >
       <i className="text-2xl fab fa-linkedin"></i>
@@ -67,6 +70,7 @@ const Hero = () => {
     <a 
       href="https://www.facebook.com/dilmini.shyawindi" 
       target="_blank" 
+      rel="noopener noreferrer"
       className="text-blue-500 hover:text-blue-700"
     >
       <i className="text-2xl fab fa-facebook"></i>

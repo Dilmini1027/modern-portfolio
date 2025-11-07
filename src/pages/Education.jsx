@@ -1,4 +1,4 @@
-import { FaUniversity, FaSchool, FaGraduationCap, FaFileAlt, FaBook } from 'react-icons/fa';
+import { FaUniversity,  FaGraduationCap, FaFileAlt, FaBook } from 'react-icons/fa';
 
 export const Education = () => {
   const education = [
@@ -12,6 +12,7 @@ export const Education = () => {
       degree: 'A/L - Physical Science',
       institute: 'H/ Debarawewa Central College',
       year: '2021(2022)',
+      grade: 'Result: BBC\'s',
       
       icon: <FaGraduationCap className="text-4xl text-green-500" />,
     },
@@ -19,6 +20,7 @@ export const Education = () => {
       degree: 'O/L Examination',
       institute: 'H/ Debarawewa Central College',
       year: '2018',
+      grade: 'Result: 9A\'s',
       
       icon: <FaBook className="text-4xl text-blue-500" />,
     },
@@ -50,6 +52,7 @@ export const Education = () => {
               <h3 className="text-xl font-semibold text-red-400">{edu.degree}</h3>
               <p className="text-base text-gray-400">{edu.institute}</p>
               <span className="text-sm text-gray-500">{edu.year}</span>
+              <span className="text-sm text-red-400">{edu.grade}</span>
             </div>
 
             {edu.pdf && (

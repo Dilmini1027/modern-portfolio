@@ -9,6 +9,30 @@ export const Projects = () => {
 
   const projects = [
     {
+      title: 'Land Acquisition Management System',
+      description: 'A full-stack web app to manage land acquisition processes.',
+      link: 'https://github.com/sashith06/Land_Aquisition_Management_System.git',
+      image: '../WhatsApp Image 2025-06-14 at 21.18.15_c4db2e7d.jpg',
+      category: 'Web App',
+    },
+
+    {
+      title: 'Blood Donation Platform',
+      description: 'A full-stack web app to manage blood donation processes.',
+      link: 'https://github.com/Dilmini1027/Blood-Donation-Platform.git',
+      image: '../WhatsApp Image 2025-06-14 at 21.18.15_c4db2e7d.jpg',
+      category: 'Web App',
+    },
+
+    {
+      title: 'E-commerce Food Market',
+      description: 'A full-stack web app to manage stock, barcodes, delivery, and expiry tracking.',
+      link: 'https://github.com/Dilmini1027/Online-shop.git',
+      image: '../WhatsApp Image 2025-06-14 at 21.18.15_c4db2e7d.jpg',
+      category: 'Web App',
+    },
+
+    {
       title: 'Inventory Management System',
       description: 'A full-stack web app to manage stock, barcodes, delivery, and expiry tracking.',
       link: 'https://github.com/Dilmini1027/inventory-management-food-market.git',
@@ -36,6 +60,16 @@ export const Projects = () => {
       image: '../WhatsApp Image 2025-06-16 at 22.01.27_fe6e223f.jpg',
       category: 'Tool',
     },
+    
+
+    {
+      title: 'BMI Calculator',
+      description: 'A full-stack web app to calculate Body Mass Index (BMI) and provide health recommendations.',
+      link: 'https://github.com/Dilmini1027/BMI-calculator.git',
+      image: '../WhatsApp Image 2025-06-16 at 22.01.27_fe6e223f.jpg',
+      category: 'Tool',
+    },
+
      {
       title: 'Portrait Art',
       description: 'Coverting photos into artistic portraits. 100% handwork',
