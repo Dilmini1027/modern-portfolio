@@ -15,7 +15,7 @@ const Sidebar = () => {
       {/* Navigation Links */}
       <nav className="pl-6 space-y-4 text-lg"><br/>
         <a href="#hero" className="block hover:text-red-400 transition-colors">Home</a>
-        <a href="#about" className="block hover:text-red-400 transition-colors">About</a>
+        <a href="#about" className="block hover:text-red-400 transition-colors">About Me</a>
         <a href="#achievements" className="block hover:text-red-400 transition-colors">Achievements</a>
         <a href="#skills" className="block hover:text-red-400 transition-colors">Skills</a>
         <a href="#education" className="block hover:text-red-400 transition-colors">Education</a>

@@ -87,7 +87,7 @@ const Hero = () => {
         transition={{ duration: 0.8 }}
       >
         <img
-          src="/WhatsApp Image 2025-04-22 at 09.21.42_1fcb8aee.jpg"
+          src="/WhatsApp Image 2025-11-07 at 15.44.36_edddc345.jpg"
           alt="Dilmini Senevirathne Profile"
           className="object-cover h-full transition-transform duration-300 shadow-lg w-80 border-blue-800-4 hover:scale-150"
         />
