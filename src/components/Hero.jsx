@@ -14,11 +14,11 @@ const Hero = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1 className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl dark:text-white">
-          Hi, I'm <span className="text-indigo-500">Dilmini Shyawindi</span>
+        <h1 className="mb-4 text-4xl font-extrabold display-font md:text-5xl">
+          Hi, I'm <span className="text-[var(--accent)]">Dilmini Shyawindi</span>
         </h1>
 
-        <h2 className="mb-6 text-2xl text-gray-700 md:text-3xl dark:text-gray-300">
+        <h2 className="mb-6 text-2xl ui-font font-semibold text-gray-300 md:text-3xl">
           <TypeAnimation
             sequence={[
               "Frontend Developer 🖥️", 2000,
@@ -31,7 +31,7 @@ const Hero = () => {
           />
         </h2>
 
-        <p className="max-w-xl mx-auto mb-6 text-lg leading-relaxed text-gray-600 md:mx-0 dark:text-gray-400">
+        <p className="max-w-xl mx-auto mb-6 text-lg ui-font leading-relaxed text-[var(--muted)] md:mx-0">
           Hi! I'm R.M. Dilmini Shyawindi Senevirathne, an undergraduate at the Institute of Technology, University of Moratuwa. I'm passionate about creating innovative web solutions and captivating digital art. Welcome to my portfolio showcasing my journey in technology and creativity.
         </p>
 
@@ -53,7 +53,7 @@ const Hero = () => {
       href="https://github.com/Dilmini1027" 
       target="_blank" 
       rel="noopener noreferrer"
-      className="text-gray-600 hover:text-black"
+      className="text-gray-300 dark:text-gray-300 hover:text-black dark:hover:text-white"
     >
       <i className="text-2xl fab fa-github"></i>
     </a>
@@ -81,15 +81,21 @@ const Hero = () => {
 
       {/* Right Section - Profile Image */}
       <motion.div
-        className="flex justify-center flex-1 mb-10 md:mb-0"
+        className="flex justify-center flex-1 mb-10 md:mb-0 relative"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
+        {/* decorative top-right corner (rotated placement) */}
+        <div className="hidden md:block absolute -top-12 -left-12 w-16 h-16 border-t-4 border-l-4 border-pink-600"></div>
+
+        {/* decorative bottom-left corner (rotated placement) */}
+        <div className="hidden md:block absolute -bottom-12 -right-12 w-16 h-16 border-b-4 border-r-4 border-pink-600"></div>
+
         <img
-          src="/WhatsApp Image 2025-11-07 at 15.44.36_edddc345.jpg"
+          src="/WhatsApp Image 2025-11-16 at 16.15.41_df640875.jpg"
           alt="Dilmini Senevirathne Profile"
-          className="object-cover h-full transition-transform duration-300 shadow-lg w-80 border-blue-800-4 hover:scale-150"
+          className="object-cover w-64 h-64 md:w-[420px] md:h-[420px] rounded-full border-[10px] border-pink-600 ring-4 ring-white shadow-[0_60px_120px_rgba(220,38,87,0.25)] transition-transform duration-300 hover:scale-105"
         />
       </motion.div>
     </section>

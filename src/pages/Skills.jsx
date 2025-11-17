@@ -1,6 +1,6 @@
 import { SkillBar } from '../components/SkillBar';
 import { FaHtml5, FaReact, FaJsSquare, FaJava, FaNodeJs, FaPython, FaGitAlt } from 'react-icons/fa';
-import { SiTailwindcss, SiMysql, SiVscodium, SiFigma, SiPostman } from 'react-icons/si';
+import { SiTailwindcss, SiMysql, SiVscodium, SiFigma } from 'react-icons/si';
 import { GiPuzzle } from 'react-icons/gi';
 import { TbUsers, TbMessageCircle, TbBrain, TbClock } from 'react-icons/tb';
 

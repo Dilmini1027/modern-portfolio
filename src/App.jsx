@@ -6,27 +6,30 @@ import { Home } from './pages/Home';
 import { About } from './pages/About';
 import { Projects } from './pages/Projects';
 import { Contact } from './components/Contact';
+import { PageProvider } from './contexts/PageContext';
 
 function App() {
   return (
     <Router>
-      <div className="flex min-h-screen">
-        {/* Desktop Sidebar */}
-        <Sidebar />
-        
-        {/* Mobile Navigation */}
-        <MobileNav />
+      <PageProvider>
+        <div className="flex min-h-screen">
+          {/* Desktop Sidebar */}
+          <Sidebar />
+          
+          {/* Mobile Navigation */}
+          <MobileNav />
 
-        {/* Main Content Area */}
-        <div className="flex-1 ml-0 md:ml-72 bg-background text-foreground">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
+          {/* Main Content Area */}
+          <div className="flex-1 ml-0 md:ml-72 bg-background text-foreground">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </div>
         </div>
-      </div>
+      </PageProvider>
     </Router>
   );
 }

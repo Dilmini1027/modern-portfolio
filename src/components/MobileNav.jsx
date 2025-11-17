@@ -23,16 +23,16 @@ const MobileNav = () => {
   return (
     <>
       {/* Mobile Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 text-white bg-black shadow-lg md:hidden">
+      <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 text-foreground bg-panel shadow-lg md:hidden">
         <h1 className="text-2xl font-bold">
-          <span className="text-red-500">D</span><span className="text-white">ilmini</span>
+          <span className="text-red-500">D</span><span className="text-foreground">ilmini</span>
         </h1>
         
         <div className="flex items-center gap-4">
           <ThemeToggle />
           <button
             onClick={toggleMenu}
-            className="p-2 text-white hover:text-red-400 transition-colors"
+            className="p-2 text-foreground hover:text-red-400 transition-colors"
             aria-label="Toggle menu"
           >
             {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -44,12 +44,12 @@ const MobileNav = () => {
       {isOpen && (
         <div className="fixed inset-0 z-40 md:hidden">
           <div 
-            className="absolute inset-0 bg-black bg-opacity-50"
+            className="absolute inset-0 bg-black/40"
             onClick={toggleMenu}
           />
           
           {/* Mobile Menu */}
-          <nav className="absolute top-0 right-0 h-full w-64 bg-black text-white shadow-lg transform transition-transform duration-300 ease-in-out">
+          <nav className="absolute top-0 right-0 h-full w-64 bg-panel text-foreground shadow-lg transform transition-transform duration-300 ease-in-out">
             <div className="p-6 pt-20">
               <div className="space-y-4">
                 {navItems.map((item) => (

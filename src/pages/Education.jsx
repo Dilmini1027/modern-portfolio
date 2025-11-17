@@ -45,7 +45,7 @@ export const Education = () => {
         {education.map((edu) => (
           <div
             key={edu.degree}
-            className="flex flex-col justify-between h-full p-6 transition-transform transform backdrop-blur-lg bg-black/10 dark:bg-slate-800/40 border border-white/20 rounded-xl hover:scale-[1.015] hover:shadow-2xl"
+            className="flex flex-col justify-between h-full p-6 transition-transform transform backdrop-blur-lg bg-white/60 dark:bg-slate-800/40 border border-black/10 dark:border-white/20 rounded-xl hover:scale-[1.015] hover:shadow-2xl"
           >
             <div className="flex flex-col items-center mb-4 space-y-2">
               {edu.icon}
